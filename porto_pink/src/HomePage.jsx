@@ -75,11 +75,11 @@ const HomePage = () => {
         {/* Mobile navigation menu */}
         {isMobileMenuOpen && (
           <div className="md:hidden mt-4 flex flex-col space-y-2 items-center">
-            <NavItem icon={Home} label="Beranda" onClick={() => navigateTo('home')} active={activeSection === 'home'} />
-            <NavItem icon={User} label="Tentang" onClick={() => navigateTo('about')} active={activeSection === 'about'} />
-            <NavItem icon={Code} label="Keahlian" onClick={() => navigateTo('skills')} active={activeSection === 'skills'} />
-            <NavItem icon={Briefcase} label="Proyek" onClick={() => navigateTo('projects')} active={activeSection === 'projects'} />
-            <NavItem icon={Mail} label="Kontak" onClick={() => navigateTo('contact')} active={activeSection === 'contact'} />
+            <NavItem icon={Home} label="Beranda" onClick={() => navigateTo('home')} active={activeSection === 'home'} />Beranda
+            <NavItem icon={User} label="Tentang" onClick={() => navigateTo('about')} active={activeSection === 'about'} />Tentang
+            <NavItem icon={Code} label="Keahlian" onClick={() => navigateTo('skills')} active={activeSection === 'skills'} />Keahlian
+            <NavItem icon={Briefcase} label="Proyek" onClick={() => navigateTo('projects')} active={activeSection === 'projects'} />Proyek
+            <NavItem icon={Mail} label="Kontak" onClick={() => navigateTo('contact')} active={activeSection === 'contact'} />Kontak
           </div>
         )}
       </nav>

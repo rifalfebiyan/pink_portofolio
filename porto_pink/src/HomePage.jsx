@@ -90,7 +90,6 @@ const HomePage = () => {
         <img
           src="/profile.jpg"
           alt="Profile"
-          alt="Profile"
   className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-xl object-cover object-position-top"
         />
         <h1 className="text-5xl font-extrabold mb-4 leading-tight">Halo, Saya Lifa</h1>

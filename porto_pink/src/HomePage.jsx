@@ -93,7 +93,7 @@ const HomePage = () => {
             className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-xl"
             onError={(e) => { e.target.onerror = null; e.target.src=" https://placehold.co/150x150/FCE7F3/BE185D?text=Foto+Profil"; }}
           />
-          <h1 className="text-5xl font-extrabold mb-4 leading-tight">Halo, Saya [Nama Anda]</h1>
+          <h1 className="text-5xl font-extrabold mb-4 leading-tight">Halo, Saya Lifa</h1>
           <p className="text-xl mb-8 max-w-2xl mx-auto">
             Seorang pengembang web yang bersemangat dengan fokus pada pembuatan pengalaman digital yang indah dan fungsional.
           </p>

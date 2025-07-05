@@ -86,25 +86,25 @@ const HomePage = () => {
 
       {/* Hero Section */}
       <section id="home" className="relative pt-24 pb-16 bg-gradient-to-r from-pink-400 to-rose-600 text-white flex items-center justify-center min-h-screen-75 rounded-b-3xl shadow-lg">
-        <div className="container mx-auto text-center p-6">
-          <img
-            src=" https://placehold.co/150x150/FCE7F3/BE185D?text=Foto+Profil"
-            alt="Foto Profil"
-            className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-xl"
-            onError={(e) => { e.target.onerror = null; e.target.src=" https://placehold.co/150x150/FCE7F3/BE185D?text=Foto+Profil"; }}
-          />
-          <h1 className="text-5xl font-extrabold mb-4 leading-tight">Halo, Saya Lifa</h1>
-          <p className="text-xl mb-8 max-w-2xl mx-auto">
-            Seorang pengembang web yang bersemangat dengan fokus pada pembuatan pengalaman digital yang indah dan fungsional.
-          </p>
-          <button
-            onClick={() => navigateTo('projects')}
-            className="bg-white text-rose-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-pink-100 transition duration-300 transform hover:scale-105 shadow-xl"
-          >
-            Lihat Proyek Saya
-          </button>
-        </div>
-      </section>
+      <div className="container mx-auto text-center p-6">
+        <img
+          src="/profile.jpg"
+          alt="Profile"
+          alt="Profile"
+  className="w-36 h-36 rounded-full mx-auto mb-6 border-4 border-white shadow-xl object-cover object-position-top"
+        />
+        <h1 className="text-5xl font-extrabold mb-4 leading-tight">Halo, Saya Lifa</h1>
+        <p className="text-xl mb-8 max-w-2xl mx-auto">
+          Seorang pengembang web yang bersemangat dengan fokus pada pembuatan pengalaman digital yang indah dan fungsional.
+        </p>
+        <button
+          onClick={() => navigateTo('projects')}
+          className="bg-white text-rose-600 px-8 py-3 rounded-full text-lg font-semibold hover:bg-pink-100 transition duration-300 transform hover:scale-105 shadow-xl"
+        >
+          Lihat Proyek Saya
+        </button>
+      </div>
+    </section>
 
       {/* About Me Section */}
       <section id="about" className="py-20 bg-white rounded-3xl shadow-md mx-6 my-10 p-8">
@@ -113,7 +113,7 @@ const HomePage = () => {
           <div className="flex flex-col md:flex-row items-center md:space-x-12">
             <div className="md:w-1/2 mb-8 md:mb-0">
               <img
-                src=" https://placehold.co/500x350/FCE7F3/BE185D?text=Tentang+Saya"
+                src="./kampus-uad.jpg"
                 alt="Tentang Saya"
                 className="rounded-3xl shadow-xl w-full h-auto"
                 onError={(e) => { e.target.onerror = null; e.target.src=" https://placehold.co/500x350/FCE7F3/BE185D?text=Tentang+Saya"; }}
@@ -241,7 +241,7 @@ const HomePage = () => {
       {/* Footer */}
       <footer className="bg-rose-800 text-white py-8 rounded-t-3xl shadow-inner">
         <div className="container mx-auto text-center px-4">
-          <p className="mb-4">&copy; {new Date().getFullYear()} [Nama Anda]. Semua Hak Dilindungi.</p>
+          <p className="mb-4">&copy; {new Date().getFullYear()} Lifa. Semua Hak Dilindungi.</p>
           <div className="flex justify-center space-x-6">
             <a href="#" target="_blank" rel="noopener noreferrer" className="text-pink-200 hover:text-white transition duration-300">
               <Github size={24} />

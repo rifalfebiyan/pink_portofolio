@@ -121,14 +121,14 @@ const HomePage = () => {
             </div>
             <div className="md:w-1/2 text-lg leading-relaxed text-gray-700">
               <p className="mb-4">
-                Saya adalah seorang pengembang web dengan pengalaman dalam membangun aplikasi web yang responsif dan berkinerja tinggi. Saya memiliki minat yang kuat dalam teknologi frontend dan selalu berusaha untuk mempelajari hal-hal baru.
+                Lulusan S1 Informatika Universitas Ahmad Dahlan. Memiliki minat kuat di bidang UI/UX Design, Web Desain, Desain Grafis, Analisis Data dan Front end Development. Terampil menggunakan Figma, HTML, CSS dan berbagai tools desain. Berpengalaman dalam proyek riil yang melibatkan desain antarmuka pengguna, pengembangan website, serta pengelolaan konten digital.
               </p>
               <p className="mb-4">
-                Dengan latar belakang di [Sebutkan bidang Anda, misal: Ilmu Komputer/Desain Grafis], saya menggabungkan pemikiran logis dengan estetika desain untuk menciptakan solusi yang intuitif dan menarik secara visual.
+                Saya pernah menjadi asisten laboratorium di Universitas Ahmad Dahlan. Sekarang saya bekerja part time sebagai koordinator desain grafis konten Instagram dan registrasi di Museum Muhammadiyah sehingga memiliki keterampilan dalam bidang komunikasi, design, kreatif digital, administrasi data, kepemimpinan dan kolaborasi tim. 
               </p>
-              <p>
+              {/* <p>
                 Saya percaya bahwa setiap proyek adalah kesempatan untuk belajar dan berkembang, dan saya selalu siap menghadapi tantangan baru.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>

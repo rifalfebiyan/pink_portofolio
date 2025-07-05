@@ -9,22 +9,22 @@ const HomePage = () => {
 
   // Dummy data for skills with pink/rose colors
   const skillsData = [
-    { name: 'React', value: 90, color: '#F472B6' },
-    { name: 'JavaScript', value: 85, color: '#EC4899' },
+    { name: 'Figma', value: 90, color: '#F472B6' },
+    { name: 'JavaScript', value: 20, color: '#EC4899' },
     { name: 'Tailwind CSS', value: 80, color: '#DB2777' },
-    { name: 'Node.js', value: 70, color: '#BE185D' },
-    { name: 'HTML/CSS', value: 95, color: '#A21CAF' },
+    { name: 'Node.js', value: 40, color: '#BE185D' },
+    { name: 'HTML/CSS', value: 85, color: '#A21CAF' },
   ];
 
   // Dummy data for projects
   const projects = [
     {
       id: 1,
-      title: 'Aplikasi Manajemen Tugas',
-      description: 'Aplikasi web untuk mengelola tugas harian, dengan fitur tambah, edit, dan hapus tugas.',
-      tech: ['React', 'Tailwind CSS', 'Node.js'],
+      title: 'UI Designer Klasko',
+      description: 'Atur Ruang Kelas dengan Mudah dan Menyenangkan',
+      tech: ['Figma','Canva'],
       link: '#',
-      image: 'https://placehold.co/400x250/FBCFE8/881337?text=Proyek+1'
+      image: '/porto-1.png'
     },
     {
       id: 2,
@@ -32,7 +32,7 @@ const HomePage = () => {
       description: 'Prototipe situs e-commerce dengan daftar produk, keranjang belanja, dan halaman checkout.',
       tech: ['React', 'CSS Modul'],
       link: '#',
-      image: ' https://placehold.co/400x250/FBCFE8/881337?text=Proyek+2'
+       image: '/porto-2.png'
     },
     {
       id: 3,
@@ -56,7 +56,7 @@ const HomePage = () => {
       {/* Navigation Bar */}
       <nav className="fixed top-0 w-full bg-white shadow-lg z-50 p-4">
         <div className="container mx-auto flex justify-between items-center px-4">
-          <div className="text-lg sm:text-xl md:text-2xl font-bold text-rose-600">Portofolio Saya</div>
+          <div className="text-lg sm:text-xl md:text-2xl font-bold text-rose-600">Lifa</div>
           {/* Mobile menu button */}
           <div className="md:hidden">
             <button onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} className="text-gray-600 hover:text-rose-600 focus:outline-none">
@@ -68,7 +68,7 @@ const HomePage = () => {
             <NavItem icon={Home} label="Beranda" onClick={() => navigateTo('home')} active={activeSection === 'home'} />
             <NavItem icon={User} label="Tentang" onClick={() => navigateTo('about')} active={activeSection === 'about'} />
             <NavItem icon={Code} label="Keahlian" onClick={() => navigateTo('skills')} active={activeSection === 'skills'} />
-            <NavItem icon={Briefcase} label="Proyek" onClick={() => navigateTo('projects')} active={activeSection === 'projects'} />
+            <NavItem icon={Briefcase} label="Portofolio" onClick={() => navigateTo('projects')} active={activeSection === 'projects'} />
             <NavItem icon={Mail} label="Kontak" onClick={() => navigateTo('contact')} active={activeSection === 'contact'} />
           </div>
         </div>
@@ -78,7 +78,7 @@ const HomePage = () => {
             <NavItem icon={Home} label="Beranda" onClick={() => navigateTo('home')} active={activeSection === 'home'} />Beranda
             <NavItem icon={User} label="Tentang" onClick={() => navigateTo('about')} active={activeSection === 'about'} />Tentang
             <NavItem icon={Code} label="Keahlian" onClick={() => navigateTo('skills')} active={activeSection === 'skills'} />Keahlian
-            <NavItem icon={Briefcase} label="Proyek" onClick={() => navigateTo('projects')} active={activeSection === 'projects'} />Proyek
+            <NavItem icon={Briefcase} label="Proyek" onClick={() => navigateTo('projects')} active={activeSection === 'projects'} />Portofolio
             <NavItem icon={Mail} label="Kontak" onClick={() => navigateTo('contact')} active={activeSection === 'contact'} />Kontak
           </div>
         )}
@@ -94,7 +94,7 @@ const HomePage = () => {
         />
         <h1 className="text-5xl font-extrabold mb-4 leading-tight">Halo, Saya Lifa</h1>
         <p className="text-xl mb-8 max-w-2xl mx-auto">
-          Seorang pengembang web yang bersemangat dengan fokus pada pembuatan pengalaman digital yang indah dan fungsional.
+          UI/UX | Graphic Designer | Front-End | Analysis Data
         </p>
         <button
           onClick={() => navigateTo('projects')}
@@ -176,7 +176,7 @@ const HomePage = () => {
       {/* Projects Section */}
       <section id="projects" className="py-20 bg-white rounded-3xl shadow-md mx-6 my-10 p-8">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center text-rose-700 mb-12">Proyek Pilihan</h2>
+          <h2 className="text-4xl font-bold text-center text-rose-700 mb-12">Portofolio</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
             {projects.map((project) => (
               <ProjectCard key={project.id} project={project} />
